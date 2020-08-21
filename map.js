@@ -40,6 +40,7 @@ $(function () {
             var obj = {
                 position: new google.maps.LatLng(dat.ido, dat.keido),
                 map: map,
+                icon: "map_tapi.png"
             }
             marker[j] = new google.maps.Marker(obj)
             attach_message(map, marker[j], dat.name, dat.konzatu, iw)
