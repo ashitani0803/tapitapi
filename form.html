@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfiWmP8Yern4QjxxoaGTCf0tbHxKAoBy4"></script>
+        <script src="form.js"></script>
+        <title>タピタピ | 混雑検索サイト</title>
+    </head>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="header-container">
+                <div class="logo">
+                    <a href="./index.html"><img class="logo-image" src="tapitapi_logo.png" /></a>
+                </div>
+                <div class="header-right">
+                    マイページ&nbsp;&nbsp;&nbsp;&nbsp;<a href="/form.html"
+                        >お店の方はこちら</a
+                    ><img src="Food_aeration-512.png" style="width: 30px;" />
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="container">
+                <form action="#" method="post">
+                    <h2>お店登録フォーム</h2>
+                    <div class="form-group">
+                        <label for="name">店名</label>
+                        <input type="text" name="name" id="name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="ido">緯度</label>
+                        <input type="text" name="ido" id="ido" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="keido">経度</label>
+                        <input type="text" name="keido" id="keido" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="konzatu" id="konzatu-label">混雑度</label>
+                        <input type="text" name="konzatu" id="konzatu" class="form-control" />
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" id="btn" class="btn btn-primary">登録する</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <img class="logo-image" src="tapitapi_logo.png" /><br />
+            Copyright©2020 TapiTapi Inc. All Rights Reserved
+        </div>
+    </body>
+</html>
+
+<style>
+#main {
+    background-color: #EBB14E;
+}
+
+.container {
+    width: 75%;
+    padding: 90px 50px;
+    background-color: #fff;
+}
+
+.form-group {
+    display: flex;
+    margin: 50px;
+}
+
+h2, .form-button {
+    text-align: center;
+}
+
+label {
+    padding: 0 60px;
+    font-weight: 500;
+}
+
+#konzatu-label {
+    padding-right: 44px
+}
+
+.form-control {
+    width: 50%
+}
+</style>
